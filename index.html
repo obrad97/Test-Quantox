@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Quantox</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="container">
+            <div class="week-day" id="Mon" onclick="openWidget(this.id)">
+                <p class="day"></p>
+                <img src="assets/images/weather_icons/050-sun.png" class="weather-img">
+                <p class="temp"></p>
+            </div>
+            <div class="week-day" id="Tue" onclick="openWidget(this.id)">
+                <p class="day"></p>
+                <img src="assets/images/weather_icons/050-sun.png" class="weather-img">
+                <p class="temp"></p>
+            </div>
+            <div class="week-day" id="Wed" onclick="openWidget(this.id)">
+                <p class="day"></p>
+                <img src="assets/images/weather_icons/050-sun.png" class="weather-img">
+                <p class="temp">23</p>
+            </div>
+            <div class="week-day" id="Thu" onclick="openWidget(this.id)">
+                <p class="day"></p>
+                <img src="assets/images/weather_icons/050-sun.png" class="weather-img">
+                <p class="temp"></p>
+            </div>
+            <div class="week-day" id="Fri" onclick="openWidget(this.id)">
+                <p class="day"></p>
+                <img src="assets/images/weather_icons/050-sun.png" class="weather-img">
+                <p class="temp"></p>
+            </div>
+            <div class="week-day" id="Sat" onclick="openWidget(this.id)">
+                <p class="day"></p>
+                <img src="assets/images/weather_icons/050-sun.png" class="weather-img">
+                <p class="temp"></p>
+            </div>
+            <div class="week-day" id="Sun" onclick="openWidget(this.id)">
+                <p class="day"></p>
+                <img src="assets/images/weather_icons/050-sun.png" class="weather-img">
+                <p class="temp"></p>
+            </div>
+            <div class="convert-unit">
+                <label class="convert-temp-label">Convert to °F</label>
+                <input type="checkbox" class="convert-temp"  onclick="convertToFahrenheit()">
+            </div>
+
+            <div class="weather-widget">
+                <div class="details">
+                    <div class="left">
+                        <p id="day">Monday</p>
+                        <p id="temp">20</p>
+                        <p id="type">Overcast</p>
+                        <hr>
+                        <p id="wind-direction">NORTH</p> <img id="wind-arrow" src="assets/images/wind/img_251550.png">
+                        <p id="wind-speed">20 mph</p> 
+                        <label class="convert-spd-label">Convert to km/h</label>
+                        <input type="checkbox" class="convert-spd" onclick="convertToKm()">
+                    </div>
+                    <div class="right">
+                        <img src="assets/images/weather_icons/003-cloudy-4.png" id="weather-img">
+                    </div>
+                </div>  
+                <div class="close-button">
+                    <button type="button" onclick="closeWidget()">Close</button>
+                </div>
+            </div>
+    </main>
+    <footer></footer>
+    
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
