@@ -11,6 +11,8 @@ const weatherData = {
         { day:'Sun', temp:25, windDirection:'south-west', windSpeed:2 , type:'sunny'},
     ]
 }
+
+// Ova funkcija 
 function displayWeather() {
     let day = document.getElementsByClassName("day");
     let weatherImg = document.getElementsByClassName("weather-img")
@@ -93,7 +95,9 @@ function openWidget(id) {
     if (checkBox.checked == true) {
         document.getElementById("wind-speed").innerHTML = (Math.round((speedCurrent * 18) / 5) + ' ' + 'km/h');
     }
-    else {}
+    else {
+        
+    }
     widget.style.display = 'block';
 }
 function closeWidget(){
